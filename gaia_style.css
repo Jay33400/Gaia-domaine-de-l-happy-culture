@@ -1,0 +1,323 @@
+
+
+*:root {
+    --color1: rgba(0, 128, 0, 0.856);
+}
+
+* {
+    overflow: auto; /*permet d'adapter la taille du conteneur pour contenir tout ce qui déborde */
+}
+
+
+body {
+    margin: 0px;
+    background-color: rgba(128, 128, 128, 0.274);      
+               
+}
+
+/* début de la partie accueil */
+
+div.en-tete { 
+    min-width: 980px;
+    position: relative;         
+    background:url(Gaia_haut.jpg) no-repeat center/100%; 
+    height: 300px;
+    
+  
+    
+}
+
+img.logo {
+    width: 10%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: rgba(59, 204, 156, 0.89);
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+img.image1 {
+    margin-top: 5px;
+    width: 30%;
+    display: inline;
+}
+
+img.image2 {
+    margin-top: 5px;
+    width: 22.5%;
+    display: inline;
+}
+
+div.gaia_rv {
+    margin-top: 30px;
+    text-align: center;
+}
+
+p1,p2, p {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    font-size:25px;
+    color: var(--color1);
+}
+
+/* début de la partie pilier */
+
+img.piliers {
+    width: 50% ;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    min-width: 350px;
+    margin-bottom: 25px;
+}
+
+table.piliers {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.piliers td {
+    width: 210px;
+    height: 100px;
+    padding-right: 50px;
+        
+}
+
+.pilier td {
+    vertical-align: top;
+}
+
+
+.piliers img {
+    width: 78px;
+    height: 66px;
+}
+
+        
+/* début de la partie contact */
+.contact {
+    min-width: 385px;
+}
+
+li {
+    display: inline;
+    font-size: 5px;
+    margin-right: 20px;
+}
+
+.contact img {
+    width: 59px;
+    height: 47px;
+}
+
+a.bouton-contact:hover {
+    border: 5px solid greenyellow;
+}
+
+/* début de la partie fenetre déroulante */
+.deroulant {
+    position: relative;
+    display: inline-block;   
+}
+
+.deroulant_enfant {
+    display: none;
+
+}
+
+.deroulant_enfant p {
+    display: block;
+    text-decoration: none;
+}
+
+.deroulant:hover .deroulant_enfant {
+    display: block;
+    margin-top: -2px;
+    
+}
+
+/* début de la partie environnement propice */
+
+.video_environnement_gaia table, .environnement_gaia table {
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.environnement_gaia img, .video_environnement_gaia img  {
+    width: 120px;
+    height: 140px;
+}
+
+/* début de la partie une alimentation saine */
+table.alimentation_saine img {
+    width: 200px;
+    height: 215px;
+}
+/* début de la partie soin et bien-être */
+
+div.poles {
+    text-align: center;
+    background-color: rgba(153, 50, 204, 0.24);    
+}
+
+.poles_b-e table {
+    margin-left: auto;
+    margin-right: auto;        
+}
+
+.poles_b-e td {    
+    padding-bottom: 30px;        
+}
+
+
+.poles_b-e table a{
+    text-decoration: none;
+    color: var(--color1) ;
+    font-size: 25px;
+    border: solid;
+    background-color: rgba(255, 255, 0, 0.342);
+}
+.retour_menu img {
+    margin-top: 50px;
+    width: 5%;
+    background-color: cornsilk;    
+}
+
+/* début de massage */
+.massage {
+    text-align: center;        
+}
+/*
+images_massage {
+    position: relative;
+}*/
+
+.masseuse {
+    position: absolute;
+    width: 12%;
+    border-radius: 50%;    
+    left: 50%;
+    transform: translate(-50%);    
+}
+
+.massage p, .poles p, .atelier_enfants p  {
+    color: var(--color1);
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 0;    
+}
+
+.salon_massage table,.ateliers table{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.salon_massage td, .ateliers td {
+    width: 50%;
+}
+    
+/* début de sophro */
+.sophrologie {
+    text-align: center;
+}    
+    
+
+
+
+
+/* Responsive design for mobile phones: attention c est 768px mais ci-dessous on met 767px pour que le ipad  */
+@media only screen and (max-width: 767px) {
+    /* début de la partie accueil */
+    div.en-tete {         
+        position: relative;         
+        background:url(Gaia_haut.jpg) no-repeat center/100%; 
+        height: 300px;        
+    }
+    
+    img.logo {
+        width: 10%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        
+    }
+
+    p1,p2, p {
+        font-size:15px;
+        
+    }
+    
+    /* début de la partie pilier */
+    
+    img.piliers {
+        width: 10% ;
+        /*min-width: 350px;*/
+        margin-bottom: 25px;
+    }
+
+    table.piliers td {
+        padding-right: 0px;        
+    }
+
+    .piliers img {
+        width: 59px;
+        height: 66px;
+    }
+
+    table.piliers p {
+        font-size: 15px;        
+    }
+
+    table.piliers img {
+        width: 50%;        
+    }
+
+    /* début de la partie alimentation saine */
+    table.alimentation_saine img {
+        width: 90px;
+        height: 110px;
+    }
+
+    /* début de la partie soin et bien-être */    
+    .poles_b-e table a{
+        text-decoration: none;
+        color: var(--color1) ;
+        font-size: 12px;
+        border: solid;
+        background-color: rgba(255, 255, 0, 0.342);
+    }
+    .retour_menu img {
+        margin-top: 50px;
+        width: 5%;
+        background-color: cornsilk;    
+    }
+
+    /* début de massage*/
+    
+       
+        
+}
+
+
+    
+
+
+
+
+
+
+
